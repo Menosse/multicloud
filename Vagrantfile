@@ -21,7 +21,8 @@ Vagrant.configure("2") do |config|
     multicloud.vm.provision :ansible_local do |ansible|
         ansible.install_mode = "default"
         ansible.playbook = "ansible/playbook.yml"
-        ansible.verbose  = "vvv"
+        # ansible.verbose  = "vvv"
+        ansible.verbose  = true
         ansible.install  = true
         ansible.limit    = "all" 
         ansible.inventory_path = "ansible/inventory"
