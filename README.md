@@ -1,4 +1,6 @@
-# Lab-DevOps
+[![Build Status](https://app.travis-ci.com/Menosse/multicloud.svg?branch=main)](https://travis-ci.com/Menosse/multicloud)
+
+# Dev env
  
 1. Subir a vm com `vagrant up`
 
