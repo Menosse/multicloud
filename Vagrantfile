@@ -1,6 +1,5 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
-# testgit
 
 Vagrant.configure("2") do |config|
 
