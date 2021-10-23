@@ -6,3 +6,4 @@ testfolder/
 __pycache__/
 .coverage
 coverage.xml
+devopslab-infra/.terraform*
