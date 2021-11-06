@@ -31,8 +31,7 @@ jobs:
   - stage: Stage Test
     name: GET URL Stage
     script:
-    - curl https://multicloud-fernando.herokuapp.com/ | grep Pipeline || travis_terminate
-      1
+      - curl https://multicloud-fernando.herokuapp.com/ | grep Pipeline || travis_terminate 1;
   - stage: Production Deploy
     name: Google Api Engine
     script: skip
