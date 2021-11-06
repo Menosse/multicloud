@@ -52,3 +52,4 @@ jobs:
     script:
     - curl https://multicloud-gcp-app.uc.r.appspot.com/ | grep Pipeline || travis_terminate
       1;
+      
