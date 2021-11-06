@@ -38,7 +38,7 @@ jobs:
     script: skip
     deploy:
       provider: gae
-      keyfile: "/lab-devops-cloud.json"
+      keyfile: /lab-devops-cloud.json
       project: lab-cloud-devops-01
       on:
         branch: main
