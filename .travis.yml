@@ -50,6 +50,5 @@ jobs:
   - stage: Production Test
     name: Test
     script:
-    - curl https://multicloud-gcp-app.uc.r.appspot.com/ | grep Pipeline || travis_terminate
+    - curl https://lab-cloud-devops-01.uc.r.appspot.com/ | grep Pipeline || travis_terminate
       1;
-      
