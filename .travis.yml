@@ -32,16 +32,16 @@ jobs:
     name: GET URL Stage
     script:
       - curl https://multicloud-fernando.herokuapp.com/ | grep Pipeline || travis_terminate 1;
-#   - stage: Production Deploy
-#     name: Google Api Engine
-#     script: skip
-#     deploy:
-#       provider: gae
-#       # keyfile: "../lab-devops-cloud-e2c2da9aee66.json"
-#       keyfile: "/lab-devops-cloud.json"
-#       project: lab-cloud-devops-01
-#       on:
-#         branch: main
+  - stage: Production Deploy
+    name: Google Api Engine
+    script: skip
+    deploy:
+      provider: gae
+      # keyfile: "../lab-devops-cloud-e2c2da9aee66.json"
+      keyfile: "/lab-devops-cloud.json"
+      project: lab-cloud-devops-01
+      on:
+        branch: main
 #   - stage: Production Test
 #     name: Get URL
 #       script:
