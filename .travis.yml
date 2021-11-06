@@ -31,7 +31,8 @@ jobs:
   - stage: Stage Test
     name: GET URL Stage
     script:
-      - curl https://multicloud-fernando.herokuapp.com/ | grep Pipeline || travis_terminate 1;
+    - curl https://multicloud-fernando.herokuapp.com/ | grep Pipeline || travis_terminate
+      1;
   - stage: Production Deploy
     name: Google Api Engine
     script: skip
@@ -44,8 +45,8 @@ jobs:
   - stage: Production Test
     name: Test
     script:
-      - curl https://multicloud-gcp-app.uc.r.appspot.com/ | grep Pipeline || travis_terminate 1;
-
+    - curl https://multicloud-gcp-app.uc.r.appspot.com/ | grep Pipeline || travis_terminate
+      1;
 before_install:
 - openssl aes-256-cbc -K $encrypted_590a0f215273_key -iv $encrypted_590a0f215273_iv
   -in lab-devops-cloud.json.enc -out ~\/lab-devops-cloud.json -d
