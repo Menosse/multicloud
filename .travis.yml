@@ -45,4 +45,4 @@ jobs:
     - stage: Stage Test
       name: GET URL Stage
       script:
-        - curl https://devopslab-gabydias.herokuapp.com/ | grep Hello || travis_terminate 1
+        - curl https://multicloud-fernando.herokuapp.com/ | grep Pipeline || travis_terminate 1
