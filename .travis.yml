@@ -39,7 +39,7 @@ jobs:
     deploy:
       provider: gae
       # keyfile: "/lab-devops-cloud.json"
-      keyfile: ~/labdevops.json
+      keyfile: /labdevops.json
       project: lab-cloud-devops-01
       on:
         branch: main
@@ -49,5 +49,4 @@ jobs:
     - curl https://multicloud-gcp-app.uc.r.appspot.com/ | grep Pipeline || travis_terminate
       1;
 before_install:
-- openssl aes-256-cbc -K $encrypted_913a884737b2_key -iv $encrypted_913a884737b2_iv
-  -in labdevops.json.enc -out ~\/labdevops.json -d
+- openssl aes-256-cbc -K $encrypted_913a884737b2_key -iv $encrypted_913a884737b2_iv -in labdevops.json.enc -out ~\/labdevops.json -d
