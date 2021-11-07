@@ -51,4 +51,4 @@ jobs:
 
       - name: Curl Test on Prod
         run: |
-          curl https://lab-cloud-devops-01.uc.r.appspot.com/ | grep Hello
+          curl https://lab-cloud-devops-01.uc.r.appspot.com/ | grep Pipeline
