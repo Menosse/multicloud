@@ -7,7 +7,7 @@ csrf = CSRFProtect(app)
 
 @app.route("/")
 def pagina_inicial():
-    return "Laboratório Pipeline DevOps1!"
+    return "Laboratório Pipeline DevOps2!"
 
 @app.route("/soma")
 def soma_valores():
