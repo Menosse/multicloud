@@ -22,7 +22,7 @@ jobs:
 
       - name: Install app dependencies
         run: |
-          pip install flask
+          pip install flask_wtf
 
       - name: Unit Test
         run: |
