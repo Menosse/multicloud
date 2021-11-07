@@ -29,3 +29,11 @@ jobs:
       - name: Unit Test
         run: |
           python -m unittest -v test
+
+      - name: Deploy
+        uses: akhileshns/heroku-deploy@v3.12.12
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: "multicloud-fernando"
+          heroku_email: "famcsn2@gmail.com"
+          procfile: "web: gunicorn app:app"
