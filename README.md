@@ -1,7 +1,6 @@
 [![Build Status](https://app.travis-ci.com/Menosse/multicloud.svg?branch=main)](https://app.travis-ci.com/Menosse/multicloud)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=menosse&metric=alert_status)](https://sonarcloud.io/dashboard?id=menosse)
-![Github Actions](https://github.com/Menosse/multicloud/blob/main/.github/workflows/actions.yml/badge.svg)
-
+![Github Actions](https://github.com/Menosse/multicloud/actions/workflows/actions.yml/badge.svg)
 
 # Dev env
  
