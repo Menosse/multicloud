@@ -36,7 +36,7 @@ jobs:
           heroku_email: "famcsn2@gmail.com"
       
       - name: Curl Test on STG
-        run: | 
+        run: |
           curl https://multicloud-fernando.herokuapp.com/ | grep Pipeline
 
       - name: Deploy to Prod
@@ -48,3 +48,7 @@ jobs:
           credentials: ${{ secrets.GCP_KEY }}
           promote: false
           version: v1
+
+      - name: Curl Test on Prod
+        run: |
+          curl https://lab-cloud-devops-01.uc.r.appspot.com/ | grep Hello
